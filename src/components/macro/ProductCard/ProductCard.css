@@ -1,0 +1,54 @@
+.img-card {
+    width: 100%;
+    height: 170px;
+}
+
+.nome-produto {
+    color: #392a22;
+    text-align: center;
+    align-items: center;
+    font-size: 19px;
+    /* word-break: ; */
+    min-height: 90px;
+}
+
+.preco-avista {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    color: #4c6c3c;
+    text-align: center;
+}
+
+.texto-avista {
+    font-weight: normal;
+}
+
+.preco-parcelado {
+    color: #392a22;
+    display: block;
+    text-align: center;
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+.card-product {
+    border: none !important;
+    margin: 10px 0px;
+}
+
+
+.card-product:hover {
+    box-shadow: 0 0 5px 0 #9c9c9c;
+    z-index: 2;
+}
+
+.btn-comprar {
+    text-transform: uppercase;
+    width: 100%;
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+}

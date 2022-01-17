@@ -1,0 +1,69 @@
+.container-nota {
+    border: solid #000 1px;
+}
+
+.hr-nota {
+    border-bottom: 1px #000 dashed;
+}
+
+.p-nota {
+    font-weight: bold;
+}
+
+.border-bottom-nota {
+    border-bottom: 1px #000 solid;
+}
+
+.border-left-nota {
+    border-left: 1px #000 solid;
+}
+
+.fonte-nota {
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.nome-empresa {
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.danfe-nota {
+    font-size: 24px;
+}
+
+.numero-um-nota {
+    font-size: 22px;
+    border: solid 1px #000;
+    display: inline;
+    padding: 5px 14px;
+    margin: 30px 30px;
+}
+
+.codigo-barras-nota {
+    margin: 10px auto;
+}
+
+.texto-maior-nota {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.negrito-maior-nota {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.dados-nota-background {
+    background-color: rgb(238, 238, 238);
+}
+
+.margem-infos-adicionais {
+    margin-top: 40px;
+}
+
+.altura-infos-adicionais {
+    min-height: 100px;
+}

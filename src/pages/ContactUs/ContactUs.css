@@ -1,0 +1,78 @@
+h1 {
+    text-align: center;
+    color: #392A22;
+}
+
+.botoes-contact {
+    padding: 8px;
+    border-radius: 3px;
+    border: none !important;
+    font-size: 12px;
+    /* font-weight: bold; */
+    width: 40%;
+    height: 35px; 
+    font-weight: inherit;
+    /* border-color: none; */
+}
+
+.input-padrao {
+box-shadow:  none;
+border: 1px solid #82613e;
+}
+
+.input-padrao:focus{
+box-shadow:  none;
+border: 1px solid #82613e;
+}
+
+.texto-input-contact {
+    font-weight: bold;
+    margin-top: 10px;
+
+}
+
+.input-mensagem {
+    height: 100px !important;
+    resize: none !important;
+}
+
+.form-group {
+    padding-top: 12px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+.btn-dd-menu {
+    border: solid 1px #82613e !important;
+}
+
+.form-select:focus {
+    box-shadow: none !important;
+}
+.form-select{
+    margin-bottom: 5px;
+}
+
+.span-err-contact {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+
+
+.btn-dd-menu:focus {
+    box-shadow:  white;
+    border: 1px solid #82613e;
+}
+
+@media (max-width: 767px) {
+    .cancelar {
+        margin-bottom: 10px;
+    }
+}
+
+.btn-apoio:focus {
+    box-shadow: none !important;
+}

@@ -1,0 +1,28 @@
+/* CLASSES ITENS ENVIO */
+
+.produto-order {
+    border: 1px solid #dddddd;
+    font-weight: bold;
+}
+
+.img-order {
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.descricao-order {
+    text-align: center;
+}
+
+.desc-1 {
+    font-weight: bold;
+}
+
+.quantidade-container, .valor-container {
+    height: 50%;
+}
+
+.valor-order {
+    text-align: start;
+}
+

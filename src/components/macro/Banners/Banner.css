@@ -1,0 +1,20 @@
+.img-carousel {
+    height: 400px;
+}
+
+.banners {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 5% 0;
+}
+
+.banner {
+    width: 500px;
+    height: 250px;
+}
+
+#banner-principal {
+    width: 100%;
+    height: 400px;
+}

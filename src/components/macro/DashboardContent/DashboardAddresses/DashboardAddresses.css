@@ -1,0 +1,72 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+.endereco-dashboard {
+    background-color: #ffffff;
+    padding: 2%;
+    margin: 2% 0;
+}
+
+.descricao-endereco {
+    margin-bottom: 1%;
+}
+
+.botao {
+    border: none;
+    margin-right: 1%;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.verde {
+    background-color: #307c04;
+    color: #fff;
+}
+
+.verde:hover {
+    background-color: #225a01;
+    color: #fff;
+}
+
+.apoio{
+    background-color: #82613E;
+    color: #fff;
+}
+
+.apoio:hover {
+    background-color: #82613ee5;
+}
+
+.def-principal {
+    width: 200px;
+    position: relative;
+    right: 0;
+}
+
+.div-def-principal {
+    display: flex;
+    justify-content: end;
+}
+
+.add-endereco {
+    padding: 15px 0;
+    width: 300px;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.no-address-text {
+    font-size: 24px;
+    color: #392a22;
+}
+
+@media (max-width: 992px) {
+    .div-def-principal {
+        justify-content: start;
+        margin-top: 10px !important;
+    }
+}
+

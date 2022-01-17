@@ -1,0 +1,215 @@
+import './DashboardAddresses.css'
+import React, { useState, useEffect } from 'react';
+import { Row, Col, Form, Modal, Button, Alert, Container } from 'react-bootstrap';
+import CEP from "../../../assets/imgs/checkout/question-diamond-fill.svg"
+import { useForm } from 'react-hook-form';
+import { getUserId } from '../../../services/auth'
+import api from '../../../services/Api'
+import AddressCardList from '../../../components/macro/DashboardContent/DashboardAddresses/AddressCardList';
+import DashboardMenu from '../DashboardMenu';
+import MaskedInput from '../../Register/MaskedInput';
+
+function DashboardAddresses(props) {
+
+    //EXIBIÇÃO MODAL DE DEU CERTO
+    const [show3, setShow3] = useState(false);
+    const handleClose3 = () => setShow3(false);
+    const handleShow3 = () => setShow3(true);
+
+    //EXIBIÇÃO MODAL ADICIONAR ENDEREÇO
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
+    function reload() {
+        window.location.reload();
+    }
+
+    const { register, setValue, setFocus } = useForm();
+
+    // const { register, handleSubmit } = useForm();
+
+    const [address, setAddress] = useState({
+        cep: '',
+        street: '',
+        number: '',
+        complement: '',
+        district: '',
+        city: '',
+        uf: '',
+    });
+
+    function reset() {
+        setAddress(
+            {
+                ...address,
+                cep: '',
+                street: '',
+                number: '',
+                complement: '',
+                district: '',
+                city: '',
+                uf: '',
+            }
+        )
+        // handleClose()
+    }
+
+    const checkCEP = (e) => {
+        const cep = e.target.value.replace(/\D/g, '');
+        console.log(cep);
+        if (cep.length == 8) {
+            fetch(`https://viacep.com.br/ws/${cep}/json/`).then(res => res.json()).then(data => {
+                console.log(data);
+                // register({ name: 'address', value: data.logradouro });
+                setValue('logradouro', data.logradouro);
+                setValue('bairro', data.bairro);
+                setValue('cidade', data.localidade);
+                setValue('uf', data.uf);
+                setFocus('bairro');
+
+                setAddress({
+                    ...address,
+                    uf: data.uf,
+                    district: data.bairro,
+                    street: data.logradouro,
+                    city: data.localidade
+                })
+            });
+        }
+    }
+
+    const [error, setError] = useState("");
+
+
+    // POST DE ENDEREÇO
+    const saveAddress = (address) => {
+        api.post(`/dashboard/account/${getUserId()}/addresses`, address)
+            .then((response) => {
+                handleShow3();
+            }
+            )
+            .catch((err) => {
+                setError("Ops! ocorreu um erro, favor tentar novamente mais tarde!");
+
+            });
+    }
+
+    const handleSubmit = (event) => {
+        setError("");
+        event.preventDefault();
+        event.stopPropagation();
+        saveAddress(address);
+        handleShow3()
+        handleClose()
+    };
+
+    // GET LISTA DE ENDEREÇOS POR CUSTOMER
+    const [customerAddresses, setCustomerAddresses] = useState([])
+
+    useEffect(() => {
+        api.get(`/dashboard/account/${getUserId()}/addresses`)
+            .then((response) => {
+                setCustomerAddresses(response.data.addresses)
+            })
+            .catch((err) => {
+                console.error("Ops! ocorreu um erro" + err)
+            })
+    }, [])
+
+        return (
+            <>
+
+                <title>Modo Selvagem | Minha conta</title>
+                <Container fluid className="row my-3 page-size">
+                    <DashboardMenu />
+                    <Col sm={8} lg={10}>
+                        <h1 className="my-3">Endereços</h1>
+                        <div className="principal">
+                            {customerAddresses ? <AddressCardList addresses={customerAddresses} /> : <h2 className="no-address-text text-center mt-3 mb-3">Você ainda não possui nenhum endereço cadastrado.</h2>}
+                            
+                            <Row>
+                                <Col xs={12} className="d-flex justify-content-center">
+                                    <Button className="botao verde add-endereco" onClick={handleShow}>Adicionar endereço</Button>
+                                </Col>
+                            </Row>
+                        </div>
+
+                        {/* <!-- MODAL ADICIONAR --> */}
+                        <Modal show={show} onHide={handleClose} >
+                            <Form name="meuForm" action="#" onSubmit={handleSubmit}>
+                                <Modal.Header closeButton>
+                                    <Modal.Title>Adicionar endereço</Modal.Title>
+                                </Modal.Header>
+
+                                <Modal.Body>
+
+                                    <Form.Label for="cep" className="label-modal">CEP *</Form.Label>
+                                    <MaskedInput mask="99999-999" type="text" className="input-modal form-control" id="cep" name="cep" placeholder="Digite o CEP" {...register("cep")} onBlur={checkCEP} required={true} onChange={(event) => setAddress({ ...address, cep: event.target.value })} value={address.cep} />
+                                    <p><a href="https://buscacepinter.correios.com.br/app/endereco/index.php?t" target="_blank" className="cep"><img src={CEP} alt="Interrogação" width="14" /> Não sei meu CEP</a></p>
+                                    <Form.Label for="estado" className="label-modal">Estado *</Form.Label>
+                                    <Form.Control type="text" className="input-modal" id="uf" name="uf" {...register("uf")} required disabled value={address.uf} />
+                                    <Form.Label for="cidade" className="label-modal">Cidade *</Form.Label>
+                                    <Form.Control type="text" className="input-modal" id="cidade" name="cidade" {...register("cidade")} required disabled value={address.city} />
+                                    <Form.Label for="bairro" className="label-modal">Bairro *</Form.Label>
+                                    <Form.Control type="text" className="input-modal" id="bairro" name="bairro" placeholder="Digite o bairro" {...register("bairro")} onChange={(event) => setAddress({ ...address, district: event.target.value })} value={address.district} required />
+                                    <Form.Label for="logradouro" className="label-modal">Logradouro *</Form.Label>
+                                    <Form.Control type="text" className="input-modal" id="logradouro" name="logradouro" placeholder="Digite o logradouro" {...register("logradouro")} onChange={(event) => setAddress({ ...address, street: event.target.value })} value={address.street} required />
+                                    <Form.Label for="numero" className="label-modal">Número *</Form.Label>
+                                    <MaskedInput mask="999999" type="text" className="input-modal form-control" id="numero" name="numero" placeholder="Digite o número" {...register("numero")} onChange={(event) => setAddress({ ...address, number: event.target.value })} value={address.number} required={true} />
+                                    <Form.Label for="complemento" className="label-modal">Complemento</Form.Label>
+                                    <Form.Control type="text" className="input-modal" id="complemento" name="complemento" placeholder="Digite o complemento" onChange={(event) => setAddress({ ...address, complement: event.target.value })} value={address.complement} />
+                                    {error &&
+                                        <Alert variant='danger'>
+                                            {error}
+                                        </Alert>
+                                    }
+
+                                </Modal.Body>
+                                <Modal.Footer>
+                                    <Row className="flex-grow-1">
+                                        <Col lg={6}>
+                                            <Button onClick={reset} className="btn btn-apoio btn-apoio-endereco">LIMPAR</Button>
+                                        </Col>
+                                        <Col lg={6}>
+                                            <Button className="btn btn-conversao btn-conversao-endereco" type="submit">SALVAR</Button>
+                                        </Col>
+                                    </Row>
+                                </Modal.Footer>
+                            </Form>
+                        </Modal>
+
+                        {/* <!-- FIM MODAL ADICIONAR --> */}
+                    </Col>
+                </Container>
+
+
+                {/* <!-- MODAL INDICANDO QUE DEU CERTO --> */}
+                <Modal show={show3} onHide={handleClose3}>
+                    <Modal.Header closeButton>
+                        <Modal.Title>Adição de endereço</Modal.Title>
+                    </Modal.Header>
+
+                    <Modal.Body>
+                        Endereço adicionado com sucesso!
+                    </Modal.Body>
+
+                    <Modal.Footer>
+                        <Row>
+                            <Col lg={12}>
+                                <button className="btn btn-apoio" onClick={handleClose3, reload}>OK</button>
+                            </Col>
+                        </Row>
+                    </Modal.Footer>
+                </Modal>
+
+
+            </>
+
+        )
+    }
+
+
+
+
+export default DashboardAddresses

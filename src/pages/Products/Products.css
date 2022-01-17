@@ -1,0 +1,24 @@
+.categoria {
+    color: #392a22;
+    font-size: 34px;
+    text-transform: uppercase;
+}
+
+aside {
+    margin: 2% 0;
+    
+}
+
+.menu-lateral {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* width: 90%; */
+
+}
+
+
+
+.filtro-fixo {
+    position: fixed;
+    width: 20%;
+}

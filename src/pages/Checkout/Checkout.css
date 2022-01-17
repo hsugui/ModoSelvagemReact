@@ -1,0 +1,409 @@
+.testinho{
+    max-height: 300px !important;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px auto;
+    color: #392A22;
+}
+
+.paragrafo-nome {
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.address-p {
+
+}
+
+.identificacao {
+    width: 100%;
+    min-height: 150px;
+    /* border: 4px solid #82613E; */
+}
+
+.endereco-checkout {
+    width: 100%;
+    min-height: 150px;
+    /* border: 4px solid #82613E !important; */
+}
+
+.frete {
+    width: 100%;
+    /* border: 4px solid #82613E; */
+}
+
+.frete-selecao {
+    margin-left: 14px;
+}
+
+.itens-envio {
+    width: 100%;
+    height: 100%;
+    /* border: 4px solid #82613E; */
+}
+
+
+.forma-pagamento {
+    width: 100%;
+    /* border: 4px solid #82613E; */
+}
+
+.finalizar-pedido {
+    padding-top: 20px;
+    width: 100%;
+    min-height: 260px;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.header-box-checkout {
+    height: 40px;
+    /* background-color: #82613E;
+     */
+     border-bottom: 2px solid #82613E;
+    color: #392A22;
+    font-weight: bold;
+    padding-top: 4px;
+    padding-left: 18px;
+    font-size: 20px;
+}
+
+#logradouro-id {
+    margin-top: 14px;
+}
+
+.dado-cliente {
+    font-weight: bold;
+}
+
+.edit-icon {
+    padding-left: 10px;
+    margin-bottom: 10px !important;
+}
+
+.btn-editar {
+    background-color: transparent;
+    border: none;
+    color: #392A22;
+    font-size: 18px;
+}
+
+.btn-editar:hover {
+    text-decoration: underline;
+}
+
+.btn-alterar-endereco {
+    margin-left: 14px;
+}
+
+.card-endereco {
+    margin-bottom: 10px;
+    border: #82613E solid 1px;
+}
+
+.label-modal {
+    font-weight: bold;
+}
+
+.input-modal {
+    margin-bottom: 12px !important;
+    border: 1px solid #82613E !important;
+}
+
+.input-modal:focus {
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.062) !important;
+    border-color: #82613E !important;
+}
+
+
+.btn-apoio-endereco {
+    width: 100%;
+}
+
+
+.btn-conversao-endereco {
+    width: 100%;
+}
+
+
+.cep {
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    border: none !important;
+}
+
+.cep:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.texto-pagamento {
+    margin: 0 2vw !important;
+}
+
+.radio-pix {
+    margin-bottom: 30px;
+}
+
+.pix-img {
+    width: 20% !important;
+    margin: 10px 0;
+}
+
+.p-pix {
+    text-align: start !important;
+    padding-left: 0 !important;
+    font-weight: bold !important;
+}
+
+.numero-pix {
+    padding-right: 20px !important;
+}
+
+
+.form-check-input {
+    background-color: #82613E !important;
+    border-color: #82613E !important;
+}
+
+.form-check-input:focus {
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.062) !important;
+}
+
+.radio-inlive-pagamento {
+    display: flex;
+    flex-direction: row;
+    padding-right: 0;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff !important;
+    background-color: #392A22 !important;
+}
+
+.label-cartao {
+    font-weight: bold !important;
+}
+
+.input-cartao {
+    margin-bottom: 4px !important;
+    border: 1px solid #82613E !important;
+}
+
+.input-cartao:focus {
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.062) !important;
+    border-color: #82613E !important;
+}
+
+#validade {
+    width: 20%;
+    display: inline-block;
+}
+
+#cvv {
+    width: 10%;
+}
+
+#parcelas {
+    width: 41%;
+    display: inline;
+}
+
+.form-custom {
+    border: 1px solid #82613E !important;
+}
+
+.form-custom:focus {
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.062) !important;
+    border-color: #82613E !important;
+}
+
+.seguro {
+    text-align: end;
+    font-weight: bold;
+    margin-bottom: 0;
+    display: inline-block;
+    text-align: end;
+}
+
+.cadeado {
+    padding-bottom: 3px;
+    margin-left: 10px;
+}
+
+.cards {
+    margin-right: 5px;
+}
+
+.total-pedido-checkout {
+    font-weight: bold;
+    font-size: 1.6em;
+    text-align: end;
+}
+
+.valor-pedido {
+    color: #4C6C3C;
+}
+
+.valores {
+    text-align: end;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.btn-custom {
+    text-align: center;
+}
+
+.btn-checkout {
+    padding: 15px;
+    /* display: flex; */
+    width: 200px;
+    text-align: center;
+}
+
+.btn-checkout:disabled {
+    background-color: #307c0488 !important;
+}
+
+
+/* CLASSES ITENS ENVIO */
+.produto {
+    border: 1px solid black !important;
+    width: 100% !important;
+    margin: 10px 5px 0px 0px !important;
+    padding: 0px !important;
+}
+
+.img {
+    padding: 10px 10px;
+}
+
+.descricao {
+    border-right: 1px solid black;
+}
+
+.desc-1 {
+    font-weight: bold;
+}
+
+.quantidade-container, .valor-container {
+    height: 50%;
+}
+
+.valor {
+    font-weight: bold;
+}
+
+.valor-container {
+    border-top: 1px solid black;
+}
+
+.accordion-item-custom {
+    border: solid 1px #d3d3d3 ;
+}
+
+.btn-salvar-endereco {
+    width: 150px;
+    padding: 10px;
+}
+
+.falta-frete-gratis {
+    color: #225a01;
+    font-size: 14px;
+    border: 1px solid #225a01;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+@media (max-width: 1399px) {
+    .valor {
+        font-size: 14px;
+    }
+
+    .identificacao {
+        min-height: 100px;
+    }
+    
+    .endereco-checkout {
+        min-height: 100px;
+    }
+    
+    .frete {
+        min-height: 100px;
+    }
+    
+    .itens-envio {
+        max-height: 1000px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .valor {
+        font-size: 12px;
+    }
+
+    .paragrafo-1 {
+        font-size: 14px;
+    }
+
+    .texto-entrega {
+        font-size: 14px;
+    }
+
+    .texto-pagamento {
+        font-size: 14px;
+    }
+
+    .radio-pagementos {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 991px) {
+    .p-pix {
+        margin-top: 20px;
+    }
+
+    .valor {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .valor {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 575px) {
+    .paragrafo-1 {
+        line-height: 16px;
+        margin-bottom: 0;
+    }
+
+    #validade {
+        width: 40%;
+    }
+    
+    #cvv {
+        width: 30%;
+    }
+
+    .valor {
+        font-size: 16px;
+    }
+
+    .descricao {
+        text-align: center;
+        border: none;
+    }
+
+    .texto-pagamento {
+        font-size: 12px;
+    }
+}

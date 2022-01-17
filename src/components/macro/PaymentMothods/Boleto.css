@@ -1,0 +1,86 @@
+.container-boleto {
+    border: solid #000 1px;
+    margin-top: 20px;
+}
+
+.borda-direita {
+    border-right: solid #000 1px;
+}
+
+.borda-esquerda {
+    border-left: solid #000 1px;
+}
+
+.borda-cima {
+    border-top: solid #000 1px;
+}
+
+.img-boleto {
+    margin: 5px 0 5px 0;
+}
+
+.barras-img {
+    width: 80%;
+}
+
+.titulos-boleto {
+    font-weight: bold;
+}
+
+.textos-boleto {
+    font-size: 20px;
+}
+
+.btn-boleto {
+    background-color: #225a01;
+    color: #fff;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.btn-boleto:hover {
+    background-color: rgba(46, 126, 0, 0.932);
+}
+
+.img-pix-qrcode {
+    width: 250px;
+}
+
+.img-pix-logo {
+    width: 400px;
+}
+
+.p-pix-qrcode {
+    font-size: 16px;
+}
+
+.pix-p1 {
+    font-weight: bold;
+    color: #392A22;
+    font-size: 18px;
+}
+
+.pix-p2 {
+    font-size: 22px;
+}
+
+.btn-apoio-boleto {
+    color: #fff;
+    background-color: #82613e;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-apoio-boleto:hover {
+    color: #fff;
+    background-color: #82613ee8;
+}

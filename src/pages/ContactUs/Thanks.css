@@ -1,0 +1,27 @@
+.p-thanks {
+    font-size: 18px;
+    color: #392A22;
+}
+
+.btn-thanks {
+    padding: 20px 24px;
+    background-color: #82613E;
+    color: #fff;
+    border-color: #82613E;
+    width: 20% !important;
+    min-height: 60px !important;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 0px 0px 1px rgb(0 0 0 / 6%);
+    border-radius: 3px;
+    border: none;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn-thanks:hover {
+    background-color: #82613ee5;
+    color: #fff;
+    text-decoration: none;
+}

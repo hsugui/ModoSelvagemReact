@@ -1,0 +1,56 @@
+header ul {
+  font-size: 16px;
+}
+
+.form-login {
+  width: 100%;
+  color: #392a22;
+  max-width: 400px;
+  padding: 15px;
+  font-size: 19px;
+  margin: auto;
+}
+
+.form-login .form-group:focus-within {
+  z-index: 5;
+}
+
+.form-login input[type="email"] {
+  margin-bottom: 10px;
+}
+
+.form-login input[type="password"] {
+  margin-bottom: 10px;
+}
+
+.text-center>small>a {
+  color: #392a22;
+}
+
+.input-padrao-login {
+  box-shadow:  none !important;
+  border: 1px solid #82613e;
+  border-radius: 2px;
+  font-size: 18px !important;
+  outline: none !important;
+}
+
+.input-padrao-login:focus{
+  box-shadow:  none;
+  border: 1px solid #82613e;
+}
+
+.texto-input {
+  font-size: 18px;
+  color: #392a22;
+  font-weight: bold;
+}
+
+
+.btn-conversao-login {
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+}

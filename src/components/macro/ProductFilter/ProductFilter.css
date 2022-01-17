@@ -1,0 +1,31 @@
+.filtrar-por {
+    color: #392a22;
+    border-bottom: 2px solid #392a22;
+    padding: 0px 10px;
+}
+
+.text-filtrar-por {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.filtro {
+
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+
+.nome-filtro {
+    padding: 5px;
+    font-size: 20px;
+}
+
+.btn-limpar-filtros {
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+}
+
+.btn-limpar-filtros:hover {
+    text-decoration: underline;
+}

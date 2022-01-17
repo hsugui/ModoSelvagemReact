@@ -1,0 +1,28 @@
+.status-itens {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.icons-status {
+    width: 28px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.status-descricao {
+    font-weight: 600 !important;
+}
+
+.pedido-realizado2-status {
+    color: #000;
+}
+
+@media (max-width: 991px) {
+    .icons-status {
+        width: 20px;
+    }
+
+    .status-descricao {
+        font-size: 12px;
+    }
+}

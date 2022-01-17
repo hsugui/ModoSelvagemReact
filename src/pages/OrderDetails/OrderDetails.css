@@ -1,0 +1,147 @@
+/* .pedido-n {
+    padding: 0px;
+} */
+
+.status-pedido, .resumo-pedido2{
+   width: 72% !important;
+}
+
+
+.status-titulo, .previsao-titulo, .titulo-resumo, .titulo-endereco, .titulo-pagamento {
+    color: #4C6C3C;
+    border-bottom: 1px solid #4C6C3C;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.pedido-realizado2 {
+    color: #216400;
+}
+
+/* total */
+
+.btn-apoio-order{
+    padding-right: 0px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+
+.total-pedido {
+    /* color: #4C6C3C; */
+    font-size: 1.6em;
+    /* text-align: start !important; */
+}
+
+.itens-total {
+    font-size: 1.2em;
+}
+
+.link-pix-boleto {
+    text-decoration: none;
+    padding: 0px;
+    color: #56c51f ;
+}
+
+.link-pix-boleto:hover {
+    text-decoration: none;
+    color: #468328 ;
+}
+
+/* botao voltar */
+
+.btn-apoio-order {
+    width: 50%;
+    height: 40px;
+    border: none;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.prev-pedido {
+    margin: 0;
+}
+
+.color-order-status{
+    height: 5px;
+    width: 10px;
+    color: yellowgreen;
+}
+
+.valores2 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.total-pedido-checkout2 {
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+@media (max-width: 991px) {
+
+    .icon-prev {
+        width: 30px;
+    }
+
+    .prev-pedido {
+        padding: 10px 0;
+        margin : 0px;
+    }
+
+    .barra-verde {
+        margin-top: 20px;
+    }
+
+    .status-pedido, .resumo-pedido2{
+        width: 100%;
+        margin-bottom: 16px;
+     }
+
+     .resumo-pedido2 {
+         padding-bottom: 20px;
+     }
+     
+}
+
+@media (max-width: 575px) {
+    .descricao {
+        text-align: center;
+    }
+    
+}
+
+@media (max-width: 509px) {
+    .pedido-realizado2 {
+        padding-bottom: 18px;
+    }
+
+    .preparando-envio {
+        padding-bottom: 18px;
+    }
+}
+
+@media (max-width: 490px) {
+    .pedido-realizado2 {
+        padding-bottom: 18px;
+    }
+
+    .preparando-envio {
+        padding-bottom: 0;
+    }
+   
+}
+
+@media (max-width: 490px) {
+    .pedido-realizado2 {
+        padding-bottom: 0;
+    }
+
+}
+
+@media (min-width: 365px) and (max-width: 509px) {
+    .pedido-realizado2 {
+        padding-bottom: 18px;
+    }
+
+}

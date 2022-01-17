@@ -1,0 +1,135 @@
+.pedido-realizado-sucesso{
+    /* background-color: #f5f5f5; */
+
+    margin-top: 40px !important;
+}
+
+.texto {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.linha1-pedido-realizado, .linha2-pedido-realizado, .resumo {
+    display: block ;
+    color: #4C6C3C;
+}
+
+.linha1-pedido-realizado {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.linha2-pedido-realizado {
+    font-size: 1.5em;
+}
+
+.infos-success {
+    min-height: 150px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-box-success {
+    /* background-color: #4C6C3C; */
+    color: #4C6C3C;
+    border-bottom: 2px solid #4C6C3C;
+    font-weight: bold;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+.box-info {
+    display: block;
+    padding: 0 10px;
+}
+
+.box {
+    height: 130px;
+    margin-top: 0.5rem;
+}
+
+/* CLASSES ITENS ENVIO */
+
+.produto {
+    /* border: 1px solid black; */
+    width: 100%;
+    margin: 10px 5px 0 5px !important;
+    padding: 0px;
+}
+
+.img {
+    padding: 10px 10px;
+}
+
+.descricao {
+    border-right: 1px solid black;
+}
+
+.produto-success {
+    border: 1px solid #dddddd;
+    width: 98%;
+    margin: auto;
+}
+
+.product-name-success {
+    font-weight: bold;
+    text-align: center;
+}
+
+.quantidade-container-success, .valor-container-success {
+    font-weight: bold;
+}
+
+.valor {
+    font-weight: bold;
+}
+
+.valor-container {
+    border-top: 1px solid black !important;
+}
+
+/* ----------- */
+
+.pagamento {
+    padding: 0px;
+}
+.forma-pg, .total {
+    display: block;
+}
+
+.link-pix-boleto {
+    text-decoration: none;
+    margin-left: 10px;
+    color: #56c51f ;
+}
+
+.link-pix-boleto:hover {
+    text-decoration: none;
+    margin-left: 10px;
+    color: #468328 ;
+}
+
+/* botoes */
+
+.col-botoes {
+    padding: 0;
+}
+
+.btn-pedido {
+    font-size: 0.9em;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    padding: 15px;
+    width: 200px;
+}
+
+.total-pedido-success {
+    font-size: 1.5em;
+}
+
+ /* ajuste responsividade tabela - tirando border */
+ @media (max-width:576px) {
+    .descricao {
+        border-right: none;
+    }
+ }

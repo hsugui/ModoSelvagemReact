@@ -1,0 +1,77 @@
+.btn-apoio-register, .btn-conversao-register {
+  width: 50%;
+  padding: 10px;
+  border-radius: 3px;
+  font-weight: inherit;
+}
+
+.form-cadastro {
+  width: 100%;
+  color: #392a22 ;
+  max-width: 960px;
+  padding: 19px;
+  font-size: 15px;
+  margin: auto;
+  z-index: 5;
+}
+
+.form-cadastro input[type="email"] {
+  margin-bottom: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-cadastro input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+header ul {
+  font-size: 16px;
+}
+
+.input-padrao {
+  display: block;
+  box-shadow:  none ;
+  border: 1px solid #82613e !important;
+  border-radius: 2px !important;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 38px;
+  padding-left: 10px;
+}
+
+.input-padrao:focus{
+  outline: none !important;
+  border-color: #82613e;
+  box-shadow: none;
+}
+
+.texto-input {
+  display: inline-block;
+  margin-bottom: 0;
+  font-size: 18px;
+  color: #392a22;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+.span-err {
+  color: red;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .btn-apoio-register, .btn-conversao-register {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+}
+
+input:focus { 
+  outline: none !important;
+  border-color: #82613e;
+  box-shadow: none;
+}

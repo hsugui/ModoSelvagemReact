@@ -1,0 +1,219 @@
+/* fotos do produto */
+
+.indicador-categoria{
+    display: inline;
+}
+
+.indicador-categoria:hover{
+    color: #392A22;
+}
+
+.foto {
+    background-color: white;
+}
+
+.carousel-control-prev-icon{
+  background-image: url(../../assets/imgs/product/seta-esquerda.png);
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+    
+}
+.carousel-control-next-icon{
+   background-image: url(../../assets/imgs/product/seta-direita.png);
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+    
+}
+
+.lista-imagens-pequenas  {
+    margin: 0;
+    padding: 0;
+}
+
+.img-pequenas {
+    background-size: 70px;
+    width: 70px;
+    border: 1px solid #e9e9e9;
+    height: 70px;
+}
+
+.img-pequenas:hover {
+    cursor: pointer;
+}
+
+.main-img {
+    width: 100%;
+    height: 330px;
+    border: 1px solid #e9e9e9;
+}
+
+.indicador-categoria {
+    text-decoration: none;
+    color: black;
+}
+
+
+.lista-imagens-pequenas {
+    list-style-type: none;
+}
+
+.product-qtd {
+    font-size: 18px;
+    font-weight: bold;
+    /* display: inline-block; */
+    margin-right: 10px;
+}
+
+
+/* informacoes do produto */
+
+.nome-produto-detalhes {
+    color: #392A22;
+    font-weight: bolder;
+}
+
+.info-produto {
+    background-color:white;
+}
+
+.quantidade-letra{
+    font-size: 16px;
+}
+
+.div-qtd {
+    margin-top: 20px;
+}
+
+.input-qtd{
+    width: 40px;
+    text-align: center;
+}
+
+.btn-mais, .btn-menos {
+    background-color: #658953;
+    color: white !important;
+}
+
+.btn-mais:hover, .btn-menos:hover {
+    color: white;
+}
+
+.btn-mais, .btn-menos, .qtd {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+}
+
+.btn-mais:focus, .btn-menos:focus, .qtd:focus {
+    z-index: 3;
+    border-color: white;
+    outline: 0;
+    box-shadow: 0 0 0 0rem white;
+}
+
+
+.div-preco {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.preco-product {
+    font-size: 33px;
+    margin-top: 30px;   
+    color: #392A22;
+    font-weight: bolder;display: inline;
+}
+
+.vista {
+    color: #61854f;
+    display: inline;
+    margin-top: 30px;
+}
+
+.parcela {
+    color: #82613E;
+
+}
+
+.botao-comprar {
+    padding: 15px;
+    width: 100%;
+}
+
+.product-h2 {
+    text-transform: uppercase;
+    border-bottom: 2px solid #392A22;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+
+a.link-relacionados , a.link-relacionados:hover {
+    color: #392a22;
+    text-decoration: none;
+}
+
+@media (max-width: 575.98px) {
+
+    .link-btn-comprar{
+        width: 100%;
+    }
+
+    .foto{
+        width: 80%;
+    }
+
+    .info-produto{
+        width: 100%;
+    }
+
+    .img-pequenas{
+        background-size:50px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .carousel-img-p{
+        display: flex;
+    }
+
+}
+
+.sem-estoque {
+    color: red;
+    font-size: 40px;
+    text-align: center;
+}
+
+.estoque {
+    color: red;
+    margin-left: 15px;
+}
+
+.sort-border {
+    box-shadow: none;
+}
+
+.sort-border:focus {
+    border-color: #392A22;
+}
+
+@media (max-width: 433px){
+    .img-pequenas{
+        background-size:40px;
+        height: 40px;
+        width: 40px;
+    }
+}
